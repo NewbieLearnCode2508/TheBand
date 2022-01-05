@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20%);
+}
+
+.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%);
+}
+
+/* Comon */
+.clear{
+    clear: both; /* Để fix lỗi cho float khi thẻ div không ôm trọn thẻ con */
+}
+
+.mt-8px{
+    margin-top: 8px;
+}
+
+.mt-16px{
+    margin-top: 16px;
+}
+
+.mt-32px{
+    margin-top: 32px;
+}
+
+.text-white{
+    color: white !important;
+}
+
+.mouse-pointer{
+    cursor: pointer !important;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    -webkit-appearance: none;
+    transition: 0.3s;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.pull-right{
+    float: right !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third{
+    width: 33.33333%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.font-15px{
+    font-size: 15px !important;
+}
+
+.font-24px{
+    font-size: 24px !important;
+}
+
+/* Main */
+.band-section,
+.Tour-section,
+.contact-section{
+    padding: 112px 0px;
+    transition: all 0.4s linear;
+}
+
+#header{
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 46px;
+    position: fixed;
+    background-color: rgb(0,0,0);
+}
+#nav{
+    font-size: 15px;
+    display: inline-block;
+}
+
+#nav > li{
+    position: relative;
+    display: inline-block;
+}
+
+#nav > li > a{
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    line-height: 46px;
+    padding: 0px 24px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+#nav > li:hover > a{
+    color: black;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display: none;
+    top: 100%;
+    position: absolute;
+    list-style-type: none;
+    box-shadow: 0 0 12px gray;
+    background-color: #fff;
+    background-clip: border-box;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav a{
+    color: black;
+    display: block;
+}
+
+#nav .subnav a:hover  {
+    color: #000;
+    background-color: #ccc;
+}
+#header .moblie-menubtn,
+#header .search-butt{
+    float: right;
+    padding: 0px 21px;
+}
+
+.moblie-menubtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .search-butt:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#header .moblie-menubtn:hover{
+    background: #ccc;
+}
+
+#header .moblie-menubtn:hover .menu-icon{
+    color: #000;
+}
+
+#header .menu-icon,
+#header .header-search{
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#slider{
+    margin-top: 45px ;
+    display: flex;
+    /* background: url('../image/slider/img_la.jpg') top center / cover no-repeat;
+    animation: SliderChange 14s infinite alternate-reverse; */
+    overflow: hidden;
+}
+
+.slider-warp {
+    margin-top: 48px;
+    display: flex;
+    width: 100vw;
+}
+
+.slider-warp img {
+    height: 100%;
+    min-width: 100%;
+}
+
+.prevBtn,
+.nextBtn {
+    outline: none;
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 14px;
+    min-width: 72px;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+@keyframes SliderChange{
+    0%{
+        background: url('../image/slider/img_la.jpg') top center / cover no-repeat;
+    }
+    50%{
+        background: url('../image/slider/la.jpg') top center / cover no-repeat;
+    }
+    100%{
+        background: url('../image/slider/ny.jpg') top center / cover no-repeat;
+    }
+}
+
+#slider .text-content{
+    width: 100%;
+    color: white;
+    position: relative;
+    bottom: 47px;
+}
+#slider .heading-text{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#slider .decription-text{
+    margin-top: 25px;
+    text-shadow: 0 0 2px #000;
+}
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;  
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-family: "Segoe UI",Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#content .section-slogan-heading{
+    opacity: 0.6; /* Độ mờ của chữ giữ lại 60% */
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-style: italic; /* Chữ in nghiêng */
+}
+
+#content .about-text{
+    margin-top: 25px;
+    line-height: 1.4; /* Tiếng việt thì nên xài 1.6 còn tiếng anh thì xài 1.4 */
+    text-align: justify;
+}
+#content .member-list{
+    margin-top: 47px;
+    overflow: hidden; /*Cách khác để xử lý lỗi float ngoại trừ dùng thẻ clear  */
+}
+
+#content .avatar{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+#content .Tour-section{
+    background-color: black;
+}
+
+.Tour-section .book-ticket{
+    margin-top: 37px;
+    background-color: #fff;
+}
+
+.book-ticket li{
+    list-style: none;
+    color: #757575;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.book-ticket .sold-out{
+    color: white;
+    padding: 3px 8px;
+    margin-left: 16px;
+    background-color: #f44336;
+}
+
+.book-ticket .quatity{
+    float: right;
+    color: #fff;
+    padding: 3px 9px;
+    margin-top: -3px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.place-list{
+    margin-top: 16px;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+}
+
+.place-heading{
+    font-weight: bolder;
+}
+
+.place-daytour{
+    margin-top: 15px;
+    color: #757575;    
+}
+
+.place-decription{
+    margin-top: 15px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.place-buy-btn{
+    padding: 11px 16px;
+    display: inline-block;
+}
+
+.place-buy-btn:hover{
+    background: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0 , 0 , 0 , 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal .modal-container{
+    background: #Fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalFadenIn ease 0.6s;
+}
+
+.modal-container .modal-close{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;;
+}
+
+.modal-close:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal .modal-heading{
+    background: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-heading .tickets-buy-icon{
+    margin-right: 2px;
+}
+
+.modal .modal-body{
+    padding: 16px;
+}
+
+.modal-body .modal-input {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 24px;
+}
+
+.modal-body .modal-label{
+    padding-bottom: 12px;
+}
+
+#buy-tickets {
+    width: 100%;
+    background: #009688;
+    color: #fff;
+    padding: 16px;
+    text-transform: uppercase;
+    border: none;
+    transition: 0.3s;
+}
+
+#buy-tickets:active{
+    transform: scale(0.9);
+}
+
+#buy-tickets:hover {
+    background: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-footer{
+    float: right;
+    padding: 16px;
+}
+
+.modal-footer a{
+    color: #2196F3;
+}
+
+@keyframes modalFadenIn {
+    from {
+        transform: translateY(-140px);
+        opacity: 0.4;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.contact-infor{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-infor i[class*="fas fa-"]{
+    width: 30px;
+}
+
+.contact-form .form-control {
+    float: left;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-btn{
+    padding: 12px 18px;
+}
+
+.map-section img{
+    width: 100%;
+}
+
+#footer{
+    padding: 64px 16px;
+}
+
+.social{
+    height: 88px;
+}
+
+.cre-page,
+.social a i{
+    color: rgba(0 , 0 , 0 , 0.6);
+    font-weight: 400;
+}
+
+.cre-page{
+    margin: 15px 0px;
+}
+
+.fab:hover{
+    opacity: 0.5;
+}
+
+/* Responsive */
+
+/*
+    PC : >=1024px
+    Tablet: >= 740px & < 1024px 
+    Mobile: < 740px
+*/

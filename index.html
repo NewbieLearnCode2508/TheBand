@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="icon" href="https://img.captain-droid.com/wp-content/uploads/2018/10/com-gamestar-pianoperfect-icon-124x124.png.webp" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+                <ul id="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#band">Band</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="more" href="#">
+                            More
+                            <i class="ti-angle-down"></i>
+                        </a>
+                        <ul class="subnav">
+                            <li><a href="#">Merchandise</a></li>
+                            <li><a href="#">Extras</a></li>
+                            <li><a href="#">Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Search -->
+                <div class="search-butt">
+                    <i class="fas fa-search header-search"></i>
+                </div>
+                <!-- Mobile menu -->
+                <div id="mobile-menu" class="moblie-menubtn">
+                    <i class="menu-icon ti-menu"></i>
+                </div>
+                
+        </div>
+
+        <div id="slider">
+            <div class="text-content text-center">
+                <div class="slider-warp">
+                    <img class="last-slide" src="./asset/image/slider/ny.jpg" alt="">
+                    <img src="./asset/image/slider/img_la.jpg" alt="">
+                    <img src="./asset/image/slider/la.jpg" alt="">
+                    <img src="./asset/image/slider/ny.jpg" alt="">
+                    <img class="first-slide" src="./asset/image/slider/img_la.jpg" alt="">
+                </div>
+                <button class="prevBtn">Previous</button>
+                <button class="nextBtn">Next</button>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- About section -->
+            <div id="band" class="band-section hide">
+                <div class="content-section">
+                    <h2 class="section-heading">THE BAND</h2>
+                    <p class="section-slogan-heading">We love music</p>
+                    <p class="font-15px about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="member-list">
+                        <div class="col col-third s-col-full member-item text-center">
+                            <div class="member-img">
+                                <p class="font-15px">Name</p>
+                                <img src="asset/image/Team band img/bandmember.jpg" alt="" class="avatar">                            </div>
+                            </div>
+                        <div class="col col-third s-col-full member-item text-center">
+                            <div class="member-img">
+                                <p class="font-15px">Name</p>
+                                <img src="asset/image/Team band img/bandmember.jpg" alt="" class="avatar">
+                            </div>
+                        </div>
+                        <div class="col col-third s-col-full member-item text-center">
+                            <div class="member-img">
+                                <p class="font-15px">Name</p>
+                                <img src="asset/image/Team band img/bandmember.jpg" alt="" class="avatar">
+                            </div>
+                        </div>
+                    </div><!-- Dùng thể div có class là clear để fix lỗi float làm thẻ div không ôm thể con -->
+                </div>
+            </div>
+
+            <!-- Tour section -->
+            <div id="tour" class="Tour-section hide">
+                <div class="content-section">
+                    <!-- Book Tickets -->
+                    <h2 class="section-heading text-white">TOUR DATES</h2>
+                    <p class="section-slogan-heading text-white">Remember to book your tickets!</p>
+                    <ul class="book-ticket">
+                        <li>September <span class="font-15px sold-out">Sold out</span></li>
+                        <li>October <span class="font-15px sold-out">Sold out</span></li>
+                        <li>November <span class="font-15px quatity">3</span></li>
+                    </ul>
+
+                    <!-- Place Tickets -->
+                    <div class="row place-list">
+                        <div class="col col-third s-col-full mt-16px">
+                            <img src="asset/image/Place/newyork.jpg" alt="New York" class="place-img">
+                            <div class="font-15px place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-daytour">Fri 27 Nov 2016</p>
+                                <p class="place-decription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn place-buy-btn s-full-width js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="col col-third s-col-full mt-16px">
+                            <img src="asset/image/Place/paris.jpg" alt="Paris" class="place-img">
+                            <div class="font-15px place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-daytour">Sat 28 Nov 2016</p>
+                                <p class="place-decription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn place-buy-btn s-full-width js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="col col-third s-col-full mt-16px">
+                            <img src="asset/image/Place/sanfran.jpg" alt="Sanfrancisco" class="place-img">
+                            <div class="font-15px place-body">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-daytour">Sun 29 Nov 2016</p>
+                                <p class="place-decription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn place-buy-btn s-full-width js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Contact section -->
+            <div id="contact" class="contact-section hide">
+                <div class="content-section">
+                    <h2 class="section-heading">CONTACT</h2>
+                    <p class="section-slogan-heading">Fan? Drop a note!</p>
+    
+                    <div class="mt-32px row">
+                        <div class="col col-half s-col-full contact-infor">
+                            <p><i class="fas fa-map-marked-alt"></i>  Chicago, US</p>
+                            <p><i class="fas fa-phone-alt"></i>  Phone: <a href="tel:0934397935">0934397935</a></p>
+                            <p><i class="fas fa-envelope"></i> Email: <a href="mailto: trantiendat25082003@gmail.com">trantiendat25082003</a> </p>
+                        </div>
+                        <div class="col contact-form col-half s-col-full">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col col-half s-col-full">
+                                        <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                    </div>
+                                    <div class="col col-half s-mt-8px s-col-full">
+                                        <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="row mt-8px">
+                                    <div class="col col-full">
+                                        <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                                    </div>
+                                </div>
+                                <input class="mt-16px s-sent-btn contact-btn s-full-width btn pull-right" type="submit" value="SENT">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-section">
+                <img src="asset/image/map/map.jpg" alt="">
+            </div>
+        </div>
+        <div id="footer">
+            <div class="social text-center font-24px">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-snapchat"></i></a>
+                <a href=""><i class="fab fa-pinterest-p"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <p class="cre-page font-15px">Powered by <a href="" class="cre-page" >w3.css</a></p>
+                <p class="cre-page font-15px">Code by <a href="https://www.facebook.com/profile.php?id=100017636919397" class="cre-page" >Tiến Đạt</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+
+            <header class="modal-heading">
+                <i class="tickets-buy-icon ti-ticket"></i>
+                Tickets
+            </header>
+
+            <div class="modal-body">
+                <label for="tickets-quantity" class="font-15px modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="tickets-quantity" type="number" class="font-15px modal-input" placeholder="How many?">
+
+                <label for="tickets-email" class="font-15px modal-label">
+                    <i class="fas fa-user"></i>
+                    Send To
+                </label>
+                <input id="tickets-email" type="email" class="font-15px modal-input" placeholder="Enter Email">
+
+                <button id="buy-tickets">
+                    Pay <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <div class="modal-help">Need <a href="https://www.google.com/">help?</a></div>
+            </footer>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
