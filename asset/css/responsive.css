@@ -6,7 +6,11 @@
 /* Tablet and mobile */
 @media (max-width: 63.9375em) {
     .slider-warp img {
-        width: 300px;
+        width: 100vw;
+    }
+
+    .avatar-name {
+        font-size: 24px;
     }
 }
 
@@ -107,7 +111,7 @@
     }
 
     #content .avatar{
-        width: 60%;
+        width: 80%;
     }
 
     #content .member-item{

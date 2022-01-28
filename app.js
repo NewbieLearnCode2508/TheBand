@@ -17,7 +17,7 @@ var headerHeight = header.clientHeight;
 var menuItems = document.querySelectorAll('#header li a[href*="#"]');
 
 let count = 1;
-const size = slideImg[0].offsetWidth;
+const size = slideImg[0].clientWidth;
 
 start();
 
@@ -66,6 +66,10 @@ function start() {
     nextBtn.addEventListener('click', nextSlide);
 
     prevBtn.addEventListener('click', prevSlide);
+
+    slideImg.forEach((e)=> {
+        e.setAttribute("draggable", "false");
+    })
 }
 setInterval(nextSlide, 4500);
 
@@ -104,12 +108,12 @@ slideWarp.addEventListener('transitionend', function() {
 
 /*Hàm thêm class open vào trong modal */
 function showbuytickets() {
-    modal.classList.add('open') 
+    modal.classList.add('open');
 }
 
 /*Hàm xóa class open ra khỏi modal */
 function closebuytickets() {
-    modal.classList.remove('open')
+    modal.classList.remove('open');
 }
 
 var bandContent = document.querySelector('.band-section');
@@ -130,10 +134,4 @@ window.onscroll = ()=> {
     if (window.pageYOffset >= 1928) {
         contactContent.classList.add('show');
     }
-    console.log(window.pageYOffset);
 }
-
-
-
-
-
