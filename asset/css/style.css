@@ -9,6 +9,10 @@ html{
     scroll-behavior: smooth;
 }
 
+:root {
+    --header-height: 46px;
+}
+
 .hide {
     opacity: 0;
     pointer-events: none;
@@ -125,7 +129,7 @@ html{
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 46px;
+    height: var(--header-height);
     position: fixed;
     background-color: rgb(0,0,0);
     display: flex;
@@ -147,7 +151,7 @@ html{
 }
 
 #nav li a{
-    line-height: 46px;
+    line-height: var(--header-height);
     padding: 0px 24px;
     text-decoration: none;
     display: inline-block;
@@ -214,7 +218,7 @@ html{
 #header .header-search{
     color: white;
     font-size: 20px;
-    line-height: 46px;
+    line-height: var(--header-height);
 }
 
 #slider{
@@ -317,7 +321,7 @@ html{
 }
 #content .member-list{
     margin-top: 47px;
-    overflow: hidden; /*Cách khác để xử lý lỗi float ngoại trừ dùng thẻ clear  */
+    overflow: hidden; 
 }
 
 #content .avatar{
@@ -438,7 +442,6 @@ html{
     min-height: 200px;
     position: relative;
     max-width: calc(100% - 32px);
-    animation: modalFadenIn ease 0.6s 0.6s;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -581,10 +584,9 @@ html{
     opacity: 0.5;
 }
 
-/* Responsive */
-
-/*
-    PC : >=1024px
-    Tablet: >= 740px & < 1024px 
-    Mobile: < 740px
-*/
+#mobile-menu {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: var(--header-height);
+}
