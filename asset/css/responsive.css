@@ -9,6 +9,10 @@
         width: 100vw;
     }
 
+    #mobile-menu {
+        display: flex;
+    }
+
     .avatar-name {
         font-size: 24px;
     }

@@ -586,7 +586,7 @@ html{
 
 #mobile-menu {
     color: #fff;
-    display: flex;
+    display: none;
     align-items: center;
     height: var(--header-height);
 }
